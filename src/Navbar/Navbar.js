@@ -7,7 +7,7 @@ function NavBar(props){
     const [time, setTime] = useState(0)
     const [isActive, setIsActive] = useState(false);
     console.log(props)
-    useEffect(() => {
+    useEffect((e) => {
         let {currentClock} = props
         let interval = null;
         if (isActive) {
@@ -19,7 +19,7 @@ function NavBar(props){
             clearInterval(interval);
         }
         return () => clearInterval(interval);
-    }, [isActive, time]);
+    }, [isActive, time, props]);
     
     
     

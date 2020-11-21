@@ -7,6 +7,9 @@ function Rolled(props) {
         <div onClick={() => props.setOpen(false)}>
             <YouTube
                 videoId={'dQw4w9WgXcQ'}
+                opts={
+                    {playerVars:{autoplay:1}}
+                }
             />
         </div>
     )

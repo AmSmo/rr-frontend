@@ -5,6 +5,7 @@ import ImageMapper from 'react-image-mapper'
 import { Modal } from 'semantic-ui-react'
 import Modal1 from '../Map1/Modals/Modal1'
 import Modal2 from '../Map1/Modals/Modal2'
+
 function Welcome(props){
     const [open, setOpen] = useState(false)
     const [contents, setContents] = useState(null)

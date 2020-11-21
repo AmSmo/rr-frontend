@@ -8,6 +8,7 @@ function Modal1(props) {
           <center>
       <YouTube
               videoId={'DoJtK7upCdg'}
+              opts={{playerVars: {autoplay: 1}}}
               />
           </center>
     </Modal.Content>

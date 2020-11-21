@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect} from 'react'
 import { Button } from 'semantic-ui-react'
 
 function Modal2(props) {
@@ -7,6 +7,7 @@ function Modal2(props) {
         audioEl.play()
     }
 
+    useEffect(()=>{playAudio()}, [])
     return (
         <center>
         <div onClick={null} >

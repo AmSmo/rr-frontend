@@ -2,13 +2,13 @@ import {Route, Switch} from 'react-router-dom'
 import './App.css';
 import NavBar from './Navbar/Navbar'
 //import Welcome from './Welcome/Welcome'
-import Start from './Act_0/Map_1'
+import Start from './Act0/Map1'
 import Rolled from './Rolled/Rolled'
-import TrackA_Router from './Track_A/TrackA_Router'
-import TrackB_Router from './Track_B/TrackB_Router'
-import TrackC_Router from './Track_C/TrackC_Router'
-import TrackD_Router from './Track_D/TrackD_Router'
-import TrackE_Router from './Track_E/TrackE_Router'
+import TrackARouter from './TrackA/TrackARouter'
+import TrackBRouter from './TrackB/TrackBRouter'
+import TrackCRouter from './TrackC/TrackCRouter'
+import TrackDRouter from './TrackD/TrackDRouter'
+import TrackERouter from './TrackE/TrackERouter'
 
 
 function App() {
@@ -17,11 +17,11 @@ function App() {
       <NavBar/ >
       <Switch>
           <Route path="/rolled" component={Rolled} />
-          <Route path="/Track_A" component={TrackA_Router} />
-          <Route path="/Track_B" component={TrackB_Router} />
-          <Route path="/Track_C" component={TrackC_Router} />
-          <Route path="/Track_D" component={TrackD_Router} />
-          <Route path="/Track_E" component={TrackE_Router} />
+          <Route path="/TrackA" component={TrackARouter} />
+          <Route path="/TrackB" component={TrackBRouter} />
+          <Route path="/TrackC" component={TrackCRouter} />
+          <Route path="/TrackD" component={TrackDRouter} />
+          <Route path="/TrackE" component={TrackERouter} />
 
           <Route path="/" component={Start} />
 

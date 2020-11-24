@@ -1,7 +1,7 @@
 import React, { useEffect} from 'react'
 import { Button } from 'semantic-ui-react'
 
-function Modal_audio(props) {
+function ModalAudio(props) {
   const playAudio = () => {
     const audioEl = document.getElementsByClassName("audio-element")[0]
     audioEl.play()
@@ -26,7 +26,7 @@ function Modal_audio(props) {
     </center>
   )
 }
-export default Modal_audio;
+export default ModalAudio;
 
 function pauseAudio() {
   var x = document.getElementsByClassName("audio-element")[0];

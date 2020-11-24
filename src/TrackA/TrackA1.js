@@ -3,14 +3,14 @@ import styled from 'styled-components'
 import { connect } from 'react-redux'
 import ImageMapper from 'react-image-mapper'
 import { Modal } from 'semantic-ui-react'
-import Modal_video from '../modals/Modal_video'
-import Modal_video_local from '../modals/Modal_video_local'
-import Modal_audio from '../modals/Modal_audio'
-import Modal_livestream from '../modals/Modal_livestream'
+import ModalVideo from '../modals/ModalVideo'
+import ModalVideoLocal from '../modals/ModalVideoLocal'
+import ModalAudio from '../modals/ModalAudio'
+import ModalLivestream from '../modals/ModalLivestream'
 
 
 
-function Track_A_1(props){
+function TrackA1(props){
   const [open, setOpen] = useState(false)
   const [contents, setContents] = useState(null)
 
@@ -21,27 +21,27 @@ function Track_A_1(props){
     switch (e.name){
       case "1":
         setOpen(true)
-        setContents(<Modal_video basic size="small" videoId={'7EpSBDPlZn4'} setOpen={modalClose}/>)
+        setContents(<ModalVideo basic size="small" videoId={'7EpSBDPlZn4'} setOpen={modalClose}/>)
       break;
       case "2":
         setOpen(true)
-        setContents(<Modal_livestream basic size="small" setOpen={modalClose} />)
+        setContents(<ModalLivestream basic size="small" setOpen={modalClose} />)
       break;
       case "3":
         setOpen(true)
-        setContents(<Modal_video basic size="small" videoId={'7EpSBDPlZn4'} setOpen={modalClose}/>)
+        setContents(<ModalVideo basic size="small" videoId={'jkV8SeNW_Nc'} setOpen={modalClose}/>)
       break;
       case "4":
         setOpen(true)
-        setContents(<Modal_video_local basic size="small" videoId={'https://dl.dropboxusercontent.com/s/l5en1hanguupv1c/Brother%2C%20Mine%20Episode%20Two%20Full%20Mockup%20Two.mp4?dl=0'} setOpen={modalClose}/>)
+        setContents(<ModalVideoLocal basic size="small" videoId={'https://dl.dropboxusercontent.com/s/l5en1hanguupv1c/Brother%2C%20Mine%20Episode%20Two%20Full%20Mockup%20Two.mp4?dl=0'} setOpen={modalClose}/>)
       break;
       case "5":
         setOpen(true)
-        setContents(<Modal_audio basic size="small" audioId={'/assets/audio/Personal_Jesus.mp3'}setOpen={modalClose} />)
+        setContents(<ModalAudio basic size="small" audioId={'https://dl.dropboxusercontent.com/s/anm4e1835utfocg/Personal_Jesus.mp3?dl=0'}setOpen={modalClose} />)
       break;
       case "6":
         setOpen(true)
-        setContents(<Modal_video basic size="small" videoId={'7EpSBDPlZn4'} setOpen={modalClose}/>)
+        setContents(<ModalVideo basic size="small" videoId={'7EpSBDPlZn4'} setOpen={modalClose}/>)
       break;
       default:
       break;
@@ -133,7 +133,7 @@ const mapStateToProps = state => {
   return state.users
 }
 
-export default connect(mapStateToProps)(Track_A_1)
+export default connect(mapStateToProps)(TrackA1)
 
 const Background = styled.div`
 background-color: #4287f5`

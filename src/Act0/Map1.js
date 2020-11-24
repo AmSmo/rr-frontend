@@ -15,18 +15,18 @@ function Welcome(props){
   const generateModal = (e) =>{
     switch (e.name){
       case "1":
-      props.history.push("/Track_A");
+      props.history.push("/TrackA");
       break;
       case "2":
-      props.history.push("/Track_B");
+      props.history.push("/TrackB");
       break;
       case "3":
-      props.history.push("/Track_C");
+      props.history.push("/TrackC");
       break;
       case "4":
-      props.history.push("/Track_D");
+      props.history.push("/TrackD");
       break;case "5":
-      props.history.push("/Track_E");
+      props.history.push("/TrackE");
       break;
       default:
       break;

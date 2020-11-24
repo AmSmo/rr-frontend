@@ -1,7 +1,7 @@
 import React, { useEffect} from 'react'
 import { Button } from 'semantic-ui-react'
 
-function Modal_video_local(props) {
+function ModalVideoLocal(props) {
   const playVideo = () => {
     const videoEl = document.getElementsByClassName("video-element")[0]
     videoEl.play()
@@ -21,4 +21,4 @@ function Modal_video_local(props) {
     </center>
   )
 }
-export default Modal_video_local;
+export default ModalVideoLocal;

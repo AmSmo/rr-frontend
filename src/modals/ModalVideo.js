@@ -1,7 +1,8 @@
 import React from 'react'
 import { Modal } from 'semantic-ui-react'
 import YouTube from 'react-youtube'
-function Modal_video(props) {
+
+function ModalVideo(props) {
 
   return (
       <Modal.Content onClick={()=> props.setOpen(false) }>
@@ -24,4 +25,4 @@ function Modal_video(props) {
 }
 
 
-export default Modal_video
+export default ModalVideo;

@@ -1,7 +1,10 @@
+//not working yet
+
 import React from 'react'
 import { Modal } from 'semantic-ui-react'
 import ReactLivestream from 'react-livestream'
-function Modal_livestream(props) {
+
+function ModalLivestream(props) {
 
   return (
       <Modal.Content onClick={()=> props.setOpen(false) }>
@@ -16,4 +19,4 @@ function Modal_livestream(props) {
   )
 }
 
-export default Modal_livestream
+export default ModalLivestream

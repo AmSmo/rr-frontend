@@ -95,13 +95,13 @@ function TrackA1(props){
     {
       name: "7",
       shape: "circle",
-      coords:[834,645,47],
+      coords:[1040,441,48],
       preFillColor: "none",
       fillColor: "none"
     }
   ]
 }
-
+let width = window.innerWidth * 0.6;
 return(
 
   <Background>
@@ -110,7 +110,7 @@ return(
   <ImageMapper
   src={'https://dl.dropboxusercontent.com/s/au6xan8beolro28/map_A_1.png?dl=0'}
   imgWidth={1200}
-  width={1200}
+  width={width}
   onClick={e=> generateModal(e)}
   map={map}
 

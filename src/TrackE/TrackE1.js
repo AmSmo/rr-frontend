@@ -81,14 +81,14 @@ function TrackE1(props){
     }
   ]
 }
-
+let width = window.innerWidth * 0.6;
 return(
   <Background>
 
   <ImageMapper
   src={'https://dl.dropboxusercontent.com/s/3jncw5ztorvep3n/clue%20board.jpg?dl=0'}
   imgWidth={1000}
-  width={1000}
+  width={width}
   onClick={e=> generateModal(e)}
   map={map}
 

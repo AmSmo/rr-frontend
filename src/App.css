@@ -40,7 +40,11 @@
 
 .center_map{
   margin: auto;
-  width: 57%;
+  width: 900px;
+  padding: 10px 10px 10px 10px;
+  border: 1px solid #BFBFBF;
+  background-color: white;
+  box-shadow: 5px 10px 8px #888888;
 
 
 }

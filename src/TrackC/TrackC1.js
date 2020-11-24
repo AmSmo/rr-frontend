@@ -57,12 +57,14 @@ areas: [
       }
 ]}
 
+let width = window.innerWidth * 0.6;
     return(
         <Background>
             <h1>{props.time}</h1>
             <ImageMapper
                 src={'https://dl.dropboxusercontent.com/s/3jncw5ztorvep3n/clue%20board.jpg?dl=0'}
-                width={1250}
+                imgWidth={1000}
+                width={width}
                 onClick={e=> generateModal(e)}
                 map={map}
 

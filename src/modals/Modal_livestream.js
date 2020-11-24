@@ -8,8 +8,8 @@ function Modal_livestream(props) {
           <center>
           <ReactLivestream
   platform="youtube"
-  youtubeApiKey={'API_KEY_HERE'}
-  youtubeChannelId="UCwMTu04flyFwBnLF0-_5H-w"
+  youtubeApiKey="AIzaSyAHNMYMKSIF31hgptGxv6_kMP4V2YLHoBM"
+  youtubeChannelId="UCMX6ZTHxULXGoCD26ePQs0g"
 />
           </center>
     </Modal.Content>

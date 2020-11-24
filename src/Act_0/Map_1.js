@@ -5,11 +5,6 @@ import ImageMapper from 'react-image-mapper'
 import { Modal } from 'semantic-ui-react'
 
 
-
-
-
-
-
 function Welcome(props){
   const [open, setOpen] = useState(false)
   const [contents, setContents] = useState(null)
@@ -75,21 +70,24 @@ function Welcome(props){
 ]}
 
 //timed events in sec
+/*
 if(props.time > 20){
   props.history.push("/Rolled")
 }
-
+*/
   return(
     <Background>
     <h1>{props.time}</h1>
+    <div className="center_map">
     <ImageMapper
-    src={'/assets/backgrounds/act_0_map.png'}
+    src={'https://dl.dropboxusercontent.com/s/h5kf351m71ljaf5/act_0_map.png?dl=0'}
     imgWidth={1200}
     width={1200}
     onClick={e=> generateModal(e)}
     map={map}
 
     />
+    </div>
     <Modal
     onClose={() => setOpen(false)}
     onOpen={() => setOpen(true)}
@@ -110,8 +108,4 @@ const mapStateToProps = state => {
 export default connect(mapStateToProps)(Welcome)
 
 const Background = styled.div`
-background:url('/assets/backgrounds/Rio.png');
-background-size: contain;
-background-repeat: no-repeat;
-height: 100%;
-width: 100%;`
+background-color: #4287f5`

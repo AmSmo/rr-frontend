@@ -11,20 +11,32 @@ function Modal_audio(props) {
   return (
     <center>
     <div onClick={null} >
-    /*
+
     <Button.Group vertical labeled icon>
     <Button icon='play' content='Play' onClick={playAudio} />
-    <Button icon='pause' content='Pause' />
-    <Button icon='shuffle' content='Shuffle' />
+    <Button icon='pause' content='Pause' onClick={pauseAudio}/>
+    <Button icon='stop' content='Stop' onClick={stopAudio}/>
     </Button.Group>
-    */
+
     <audio className="audio-element">
-    <source src="https://assets.coderrocketfuel.com/pomodoro-times-up.mp3"></source>
+    <source src={props.audioId}></source>
     </audio>
 
     </div>
     </center>
   )
 }
+export default Modal_audio;
 
-export default Modal_audio
+function pauseAudio() {
+  var x = document.getElementsByClassName("audio-element")[0];
+  x.pause();
+  console.log("pause");
+}
+
+function stopAudio(){
+  var x = document.getElementsByClassName("audio-element")[0];
+  x.pause();
+  x.currentTime = 0;
+  console.log("stop");
+}

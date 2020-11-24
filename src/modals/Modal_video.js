@@ -10,11 +10,18 @@ function Modal_video(props) {
               videoId={props.videoId}
               //videoId={'7EpSBDPlZn4'}
 
-              opts={{playerVars: {autoplay: 1}}}
+              opts={
+                {
+                  playerVars: {autoplay: 1, controls: 0},
+                  Volume: 1
+                }
+              }
               />
           </center>
     </Modal.Content>
   )
+
 }
+
 
 export default Modal_video

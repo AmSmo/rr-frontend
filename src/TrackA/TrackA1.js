@@ -136,4 +136,5 @@ const mapStateToProps = state => {
 export default connect(mapStateToProps)(TrackA1)
 
 const Background = styled.div`
-background-color: #4287f5`
+height: 93vh;
+background-color: #4287f5;`
